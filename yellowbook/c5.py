@@ -36,3 +36,23 @@ strList = ["The", "fox", "jumped", "over", "the", "fence", "."]
 str = " ".join(strList)
 str = str.replace(" .", ".")
 print(str)
+#6. Replace s with $.
+x = "A screaming comes across the sky."
+# Uses build-in replace method
+print(x.replace('s', '$'))
+# Uses a for loop, replace s with $ in each iteration
+l = []
+for i in x:
+    if i == "s" or i == "S":
+        i = "$"
+        l.append(i)
+    else:
+        l.append(i)
+print("".join(l))
+#7. Find index of a letter.
+x = "Animal"
+print(x.index("n"))
+#8. Slice the sentense, remove period.
+x = "It was bright cold day in April, and the clocks were striking thirteen."
+
+print(x[:-1])
